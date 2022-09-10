@@ -1,10 +1,14 @@
+import ErrorBoundary from '../ErrorBoundry/ErrorBoundry';
 import ExError from '../ExError/ExError';
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <ExError/>
+      <ErrorBoundary>
+        <ExError/>
+      </ErrorBoundary>
+      
     </div>
   );
 }
