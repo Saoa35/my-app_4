@@ -1,6 +1,7 @@
 // import ErrorBoundary from '../ErrorBoundry/ErrorBoundry';
 // import ExError from '../ExError/ExError';
-import RefsEx from '../RefsEx/RefsEx';
+// import RefsEx from '../RefsEx/RefsEx';
+import ContextEx from '../ContextEx/ContextEx';
 import './App.css';
 
 function App() {
@@ -10,7 +11,9 @@ function App() {
         <ExError/>
       </ErrorBoundary> */}
 
-      <RefsEx/>
+      {/* <RefsEx/> */}
+
+      <ContextEx/>
       
     </div>
   );
