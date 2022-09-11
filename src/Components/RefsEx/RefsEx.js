@@ -7,10 +7,15 @@ export default class RefsEx extends React.Component {
         super(props);
         this.myRef = React.createRef();
         this.inputRef = React.createRef();
+        this.handleChange = this.handleChange.bind(this);
     }
 
     componentDidMount() {
         console.log(this.myRef.current.textContent);
+    }
+
+    handleChange() {
+        console.log(this.inputRef.current.value);
     }
 
     render() {
@@ -23,7 +28,7 @@ export default class RefsEx extends React.Component {
                     Refs Example
                 </h2>
 
-                <input type='text' ref={this.inputRef}/>
+                <input type='text' ref={this.inputRef} onChange={this.handleChange}/>
             </div>
         )
     }
