@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './Components/App/App';
+import { MyContext } from './Context-api/myContext';
 
 const value = {
       name: 'Alex',
@@ -12,6 +13,8 @@ const value = {
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <MyContext.Provider value={value}>
+     <App />
+    </MyContext.Provider>
   </React.StrictMode>
 );
