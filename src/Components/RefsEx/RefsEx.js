@@ -8,11 +8,19 @@ export default class RefsEx extends React.Component {
         this.myRef = React.createRef();
     }
 
+    componentDidMount() {
+        console.log(this.myRef);
+    }
+
     render() {
+
+        // console.log(this.myRef);
 
         return(
             <div>
-                Refs Example
+                <h2 ref={this.myRef}>
+                    Refs Example
+                </h2>
             </div>
         )
     }
