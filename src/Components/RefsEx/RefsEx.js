@@ -6,10 +6,11 @@ export default class RefsEx extends React.Component {
     constructor(props) {
         super(props);
         this.myRef = React.createRef();
+        this.inputRef = React.createRef();
     }
 
     componentDidMount() {
-        console.log(this.myRef);
+        console.log(this.myRef.current.textContent);
     }
 
     render() {
@@ -21,6 +22,8 @@ export default class RefsEx extends React.Component {
                 <h2 ref={this.myRef}>
                     Refs Example
                 </h2>
+
+                <input type='text' ref={this.inputRef}/>
             </div>
         )
     }
