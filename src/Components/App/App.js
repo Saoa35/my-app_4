@@ -2,6 +2,7 @@
 // import ExError from '../ExError/ExError';
 // import RefsEx from '../RefsEx/RefsEx';
 // import ContextEx from '../ContextEx/ContextEx';
+import Parent from '../Portal/Portal';
 import './App.css';
 
 function App() {
@@ -14,6 +15,8 @@ function App() {
       {/* <RefsEx/> */}
 
       {/* <ContextEx/> */}
+
+      <Parent/>
       
     </div>
   );
