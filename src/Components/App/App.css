@@ -2,3 +2,21 @@
   text-align: center;
 }
 
+.modal {
+  animation: showModal .3s ease-out;
+  border: 2px solid black;
+  margin: auto;
+  position: absolute;
+  max-width: 340px;
+  width: 100%;
+  background-color:aliceblue;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: fit-content;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  border-radius: 5px;
+}
